@@ -152,12 +152,4 @@ public class UserServiceImpl extends UserServiceGrpc.UserServiceImplBase {
 - **REST** is more widely supported and best suited for web-based APIs and external services.
 - **gRPC** is **faster**, supports **streaming**, and is **ideal for microservices** and real-time systems.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contributing
-Feel free to submit pull requests or open issues!
-
-## Contact
-For questions, reach out to **your.email@example.com**.
 
