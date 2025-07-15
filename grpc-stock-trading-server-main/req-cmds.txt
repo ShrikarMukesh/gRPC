@@ -1,0 +1,38 @@
+# Install
+sudo apt install -y curl
+curl -sSL "https://github.com/fullstorydev/grpcurl/releases/download/v1.8.9/grpcurl_1.8.9_linux_x86_64.tar.gz" | sudo tar -xz -C /usr/local/bin
+
+# Test if installed
+grpcurl --version
+
+# Test your service
+grpcurl -plaintext localhost:9090 list
+grpcurl -plaintext -d '{"stock_symbol": "AAPL"}' localhost:9090 stocktrading.StockTradingService/getStockPrice
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Install
+sudo apt install -y curl
+curl -sSL "https://github.com/fullstorydev/grpcurl/releases/download/v1.8.9/grpcurl_1.8.9_linux_x86_64.tar.gz" | sudo tar -xz -C /usr/local/bin
+
+# Test if installed
+grpcurl --version
+
+# Test your service
+grpcurl -plaintext localhost:9090 list
+grpcurl -plaintext -d '{"stock_symbol": "AAPL"}' localhost:9090 stocktrading.StockTradingService/getStockPrice
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+   # Using Chocolatey (install Chocolatey first if you haven't)
+   choco install grpcurl
+
+   # Or download directly from:
+   # https://github.com/fullstorydev/grpcurl/releases
+   # Download the Windows ZIP file (grpcurl_x.x.x_windows_x86_64.zip)
+   # Extract and add to PATH
+
+   # Test commands
+   grpcurl -plaintext localhost:9090 list
+   grpcurl -plaintext -d "{\"stock_symbol\": \"AAPL\"}" localhost:9090 stocktrading.StockTradingService/getStockPrice
